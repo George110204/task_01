@@ -1,16 +1,25 @@
  body{
-     
      font-family: 'Open Sans', sans-serif;
      font-family: 'Raleway', sans-serif;
      font-family: 'Cardo', serif;
      font-size: 14px;
       color: #6c7279;
+      background-color: #ffffff;
+     -webkit-font-smoothing: antialiased;
  }
 *,
  *:before, 
 *:after  {
    box-sizing: border-box; 
 } 
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p{
+    margin: 0 0 10px 0;
+}
 /* header  */
 
 .container{
@@ -21,11 +30,110 @@
 
 
 .header{
-padding: 35px 0;
+    height: 100px;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header__inner{
 display: flex;
 justify-content: space-between;
 border-bottom: 1px solid #515369;
+padding: 35px 0;
+align-items: center;
+}
+
+
+.nav{
+font-size: 13px;
+font-weight: bold;
+text-transform: uppercase;
+display: flex;
+}
+
+.nav__link{
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.75;
+transition: opacity .1s linear;
+margin-left: 50px;
+}
+
+.nav__link:first-child{
+    margin-left: 0px;
+}
+
+
+.nav__link:hover{
+opacity: 1;
+}
+
+
+.intro {
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    background: #31344e url("img/intro.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner{
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px; 
+    line-height: 1.1; 
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0 0 30px ;
+   
+}
+
+.intro__subtitle{
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+
+
+
+.btn{
+    padding: 14px 40px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+font-family: 'Raleway', sans-serif;
+border: 0;
+cursor: pointer;
+transition: background .1s linear;
+}
+
+
+.btn--red{
+    background-color: #e84545;
+}
+
+.btn--red:hover{
+    background-color: #d40e0e;
 }
