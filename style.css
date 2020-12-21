@@ -1,5 +1,5 @@
  body{
-     background-color: chartreuse;
+     
      font-family: 'Open Sans', sans-serif;
      font-family: 'Raleway', sans-serif;
      font-family: 'Cardo', serif;
@@ -17,4 +17,15 @@
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+}
+
+
+.header{
+padding: 35px 0;
+}
+
+.header__inner{
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #515369;
 }
